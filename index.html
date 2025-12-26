@@ -45,46 +45,21 @@
 
     .container {
       width: 100%;
-      margin-right: auto;
-      margin-left: auto;
-      padding-right: 0.75rem;
-      padding-left: 0.75rem;
+      max-width: none;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin: 0 auto;
       box-sizing: border-box;
+    }
+
+    .container.my-auto {
+      padding-top: 2%;
+      padding-bottom: 5%;
     }
 
     .my-auto {
       margin-top: auto;
       margin-bottom: auto;
-    }
-
-    @media (min-width: 576px) {
-      .container {
-        max-width: 540px;
-      }
-    }
-
-    @media (min-width: 768px) {
-      .container {
-        max-width: 720px;
-      }
-    }
-
-    @media (min-width: 992px) {
-      .container {
-        max-width: 960px;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      .container {
-        max-width: 1140px;
-      }
-    }
-
-    @media (min-width: 1400px) {
-      .container {
-        max-width: 1320px;
-      }
     }
 
     .site-nav {
@@ -133,16 +108,16 @@
     .site-menu {
       display: flex;
       align-items: center;
-      gap: 1.25rem;
+      gap: 1.4rem;
     }
 
     .site-menu__link {
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
       font-weight: 600;
-      font-size: 0.75rem;
-      color: var(--muted);
       text-decoration: none;
+      color: var(--text);
       transition: color 0.2s;
     }
 
@@ -257,8 +232,9 @@
 
     .hero h1 {
       margin: 0;
-      font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+      font-size: 2.2rem;
       font-weight: 600;
+      color: var(--text);
     }
 
     .hero p {
@@ -646,15 +622,15 @@
             <span class="site-brand__text">Cyber Frogy</span>
           </a>
           <nav class="site-menu d-none d-md-flex">
-            <a class="site-menu__link" href="https://chintangurjar.com/">Home</a>
-            <a class="site-menu__link" href="https://chintangurjar.com/whoami/">Whoami</a>
-            <a class="site-menu__link" href="https://chintangurjar.com/posts/">Blog</a>
-            <a class="site-menu__link" href="https://chintangurjar.com/mindmaps/">Mindmaps</a>
-            <a class="site-menu__link" href="https://chintangurjar.com/threat-actor-db/">Threat-Actor DB</a>
-            <a class="site-menu__link" href="https://chintangurjar.com/github/">GitHub</a>
-            <a class="site-menu__link" href="https://chintangurjar.com/checklists/">Checklists</a>
-            <a class="site-menu__link" href="https://chintangurjar.com/kickstartcareer/">Kickstart Career</a>
-            <a class="site-menu__link" href="https://chintangurjar.com/disclaimer/">Disclaimer</a>    
+            <a class="site-menu__link" href="/">Home</a>
+            <a class="site-menu__link" href="/whoami">Whoami</a>
+            <a class="site-menu__link" href="/posts">Blog</a>
+            <a class="site-menu__link" href="/mindmaps">Mindmaps</a>
+            <a class="site-menu__link" href="/threat-actor-db">Threat-Actor DB</a>
+            <a class="site-menu__link" href="/github">GitHub</a>
+            <a class="site-menu__link" href="/checklists">Checklists</a>
+            <a class="site-menu__link" href="/kickstartcareer">Kickstart Career</a>
+            <a class="site-menu__link" href="/disclaimer">Disclaimer</a>
           </nav>
           <div class="site-nav__actions">
             <button class="navbar-toggler site-menu__toggle d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#site-menu-drawer" aria-controls="site-menu-drawer" aria-expanded="false" aria-label="Toggle navigation">
@@ -664,15 +640,15 @@
         </div>
         <div class="collapse site-menu__drawer d-md-none" id="site-menu-drawer">
           <nav class="d-flex flex-column gap-2">
-            <a class="site-menu__link" href="https://chintangurjar.com/">Home</a>
-            <a class="site-menu__link" href="https://chintangurjar.com/whoami/">Whoami</a>
-            <a class="site-menu__link" href="https://chintangurjar.com/posts/">Blog</a>
-            <a class="site-menu__link" href="https://chintangurjar.com/mindmaps/">Mindmaps</a>
-            <a class="site-menu__link" href="https://chintangurjar.com/threat-actor-db/">Threat-Actor DB</a>
-            <a class="site-menu__link" href="https://chintangurjar.com/github/">GitHub</a>
-            <a class="site-menu__link" href="https://chintangurjar.com/checklists/">Checklists</a>
-            <a class="site-menu__link" href="https://chintangurjar.com/kickstartcareer/">Kickstart Career</a>
-            <a class="site-menu__link" href="https://chintangurjar.com/disclaimer/">Disclaimer</a>
+            <a class="site-menu__link" href="/">Home</a>
+            <a class="site-menu__link" href="/whoami">Whoami</a>
+            <a class="site-menu__link" href="/posts">Blog</a>
+            <a class="site-menu__link" href="/mindmaps">Mindmaps</a>
+            <a class="site-menu__link" href="/threat-actor-db">Threat-Actor DB</a>
+            <a class="site-menu__link" href="/github">GitHub</a>
+            <a class="site-menu__link" href="/checklists">Checklists</a>
+            <a class="site-menu__link" href="/kickstartcareer">Kickstart Career</a>
+            <a class="site-menu__link" href="/disclaimer">Disclaimer</a>
           </nav>
         </div>
       </div>
